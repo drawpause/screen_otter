@@ -14,7 +14,7 @@ if http or https not in url:
 
 # Make the filename nicer and strip special characters
 filename = re.sub(r"[^\w\s]", ' ', url)
-filename = re.sub(r"\s+", '-', filename) + '.jpg'
+filename = re.sub(r"\s+", '-', filename) + '.png'
 
 # Init PhantomJS
 driver = webdriver.PhantomJS('phantomjs')
