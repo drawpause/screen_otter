@@ -1,6 +1,6 @@
 # Screen Otter
 
-### Get a screenshot from url
+### Gets a screenshot from url
 
 Usage:
 ```
@@ -18,3 +18,4 @@ Screen Otter uses PhantomJS, which saves the screenshots in png format. In some 
 ```
 mogrify -flatten -format jpg *.png && rm *.png
 ```
+![alt text](http://pozziblemoviereviews.com/wp-content/uploads/2013/01/evilotter.jpg "Screen Otter")
