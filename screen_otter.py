@@ -17,7 +17,7 @@ filename = re.sub(r"[^\w\s]", ' ', url)
 filename = re.sub(r"\s+", '-', filename) + '.png'
 
 # Init PhantomJS
-driver = webdriver.PhantomJS('phantomjs')
+driver = webdriver.PhantomJS("phantomjs", service_args=['--ignore-ssl-errors=true'])
 driver.set_window_size(1024, 768)
 driver.get(str(url))
 driver.save_screenshot(filename)
