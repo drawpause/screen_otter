@@ -10,7 +10,7 @@ python screen_otter.py [host]
 This is especially handy when dealing with a list of hosts, for example after a Nmap scan:
 ```
 nmap -p 80 [network] --open -oG list_of_hosts.txt
-cat list_of_hosts.txt | grep 'Status: Up' | cut -d ' ' -f 2
+cat list_of_hosts.txt | grep 'Status: Up' | cut -d ' ' -f 2 > lists_of_hosts.txt
 while read host; do python screen_otter.py $host; done < list_of_hosts.txt
 ```
 
