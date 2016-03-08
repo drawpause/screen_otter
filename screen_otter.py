@@ -9,7 +9,7 @@ http = 'http://'
 https = 'https://'
 
 # If url doesn't have the protocol prefix
-if http or https not in url:
+if http not in url and https not in url:
     url = http + url
 
 # Make the filename nicer and strip special characters
